@@ -1,0 +1,9 @@
+desktop.ini
+node_modules
+.env
+test
+build
+Layout.jsx
+.DS_Store
+.idea
+data

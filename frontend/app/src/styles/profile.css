@@ -1,0 +1,490 @@
+/* * Profile CSS style codes  */
+.gambers-profile-container {
+    border: 1.5px solid #1C1611;
+    height: 258px;
+    width: 100%;
+    margin-bottom: 1.2%;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+}
+
+
+.cash-in-container {
+    width: 100%;
+    height: 275px;
+}
+
+/* * History Container */
+.history-container {
+    height: 100%;
+    border-right: 1.5px solid #1C1611;
+    width: 180px;
+    background-color: #F6D93C;
+    box-sizing: border-box;
+}
+
+/* * Profile Container */
+.profile-container {
+    height: 100%;
+    width: 320px;
+    border-right: 1.5px solid #1C1611;
+    padding: 2.5%;
+    box-sizing: border-box;
+}
+
+.gambler-name-container {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.gambler-name {
+    width: 200px;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+
+.gambler-name span {
+    font-family: var(--font-regular);
+}
+
+#gambler-name {
+    font-family: var(--font-medium);
+    font-size: 1.1rem;
+}
+
+#gambler-title,
+#gambler-joined-date {
+    font-size: 0.9rem;
+}
+
+#gambler-joined-date {
+    margin-top: 6.6%;
+}
+
+
+.profile-container hr {
+    height: 1px;
+    background-color: #1C1611;
+    border: none;
+    margin-top: 9%;
+    margin-bottom: 8%;
+}
+
+.profile-image {
+    height: 70px;
+    width: 93px;
+    border: 1.5px solid #1C1611;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.profile-image img {
+    height: 70px;
+    width: 90px;
+}
+
+.gambler-achievements-container {
+    width: 100%;
+    height: 98px;
+    border: 1.5px solid #1C1611;
+    display: flex;
+    font-family: var(--font-regular);
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+.bets-container,
+.luck-container,
+.jackpots-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.bets-container {
+    width: 90px;
+    border-right: 1.5px solid #1C1611;
+}
+
+.luck-container {
+    width: 91px;
+    border-right: 1.5px solid #1C1611;
+}
+
+.jackpots-container {
+    width: 90px;
+}
+
+.gambler-achievements-container hr {
+    width: 50px;
+    height: 1.5px;
+    border: none;
+}
+
+.bets-container img {
+    margin-top: 9%;
+    width: 28px;
+}
+
+.luck-container img {
+    margin-top: 9%;
+    transform: rotate(25deg);
+    width: 28px;
+}
+
+.jackpots-container img {
+    margin-top: 9%;
+    width: 28px;
+}
+
+/* * Wallet container */
+.wallet-outer-container {
+    height: 100%;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8%;
+    box-sizing: border-box;
+}
+
+.wallet-inner-container {
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid #1C1611;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.balance-container {
+    position: absolute;
+    bottom: 0;
+    border-top: 1.5px solid #1C1611;
+    width: 100%;
+    display: flex;
+    font-family: var(--font-regular);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#wallet-money {
+    font-family: var(--font-num-medium);
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+
+/* * Cash in */
+.cash-in-container {
+    width: 100%;
+    height: 280px;
+}
+
+.cash-in-title-container {
+ width: 100%;
+ height: 60px;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;
+ gap: 0.3rem;
+}
+
+#cash-in-title {
+    width: 95px;
+    height: 25px;
+    background-color: #F98E58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-regular);
+    font-size: 0.8rem;
+}
+
+#cash-in-sub-title {
+    font-family: var(--font-regular);
+    font-size: 0.8rem;
+}
+
+.cash-in-cards {
+    display: flex;
+    align-items: end;
+    gap: 1.5%;
+    width: 100%;
+    height: 220px;
+}
+
+.cash-in-cards hr {
+    margin: 0;
+    border: none;
+    height: 195px;
+    background-color: #1C1611;
+    width: 1.5px;
+}
+
+#card-1, #card-2, #card-3,
+#card-4, #card-5, #card-6 {
+    width: 165px;
+    height: 195px;
+    background-color: #FFEFD7;
+    border: 1.5px solid #1C1611;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+#card-1-title, #card-2-title, #card-3-title,
+#card-4-title, #card-5-title, #card-6-title {
+    width: 100%;
+    height: 35px;
+    font-family: var(--font-regular);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F98E58;
+    border-top: 1.5px solid #1C1611;
+    box-sizing: border-box;
+}
+
+
+#card-1-price-value, #card-2-price-value, #card-3-price-value,
+#card-4-price-value, #card-5-price-value, #card-6-price-value {
+    font-family: var(--font-num-regular);
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+}
+/* 
+* {
+    box-sizing: border-box;
+} */
+
+/*laptop small*/
+@media screen and (max-width: 1280px) {
+    .gambers-profile-container{
+        height: 200px;
+    }
+
+    .profile-container{
+        padding: 2%;
+    }
+
+    .profile-container hr{
+        margin: 7%;
+    }
+
+    .gambler-name-container{
+        height: 50px;
+    }
+
+    #gambler-joined-date{
+        margin: 10px;
+    }
+
+    .profile-image{
+        height: 50px;
+        width: 73px;
+    }
+
+    .gambler-achievements-container{
+        height: 78px;
+    }
+
+    .cash-in-container{
+        height: 230px;
+    }
+
+    .cash-in-cards{
+        height: 175px;
+    }
+
+    .cash-in-cards hr {
+        height: 175px;
+    }
+
+    #card-1-price-value, #card-2-price-value, #card-3-price-value, #card-4-price-value, #card-5-price-value, #card-6-price-value {
+        margin-bottom: 3rem;
+    }
+    
+}
+
+/*Tablet*/
+@media screen and (max-width: 930px){
+    .gambers-profile-container{
+        width: 580px;
+    }
+
+    .profile-container{
+        width: 250px;
+    }
+
+    .wallet-outer-container{
+        width: 200px;
+    }
+
+    .history-container{
+        width: 130px;
+    }
+
+    #wallet-money{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .cash-in-container{
+        height: 100px;
+    }
+
+    .cash-in-cards{
+        align-items: normal;
+        height: 150px;
+        padding: 25px 0 0 0;
+    }
+
+    .cash-in-cards hr{
+        height: 150px;
+    }
+
+    #card-1, #card-2, #card-3,
+    #card-4, #card-5, #card-6 {
+        height: auto;
+        width: 120px;
+    }
+}
+
+/* MObile*/
+
+@media screen and (max-width: 660px){
+    .cash-in-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .cash-in-title-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cash-in-cards {
+        display: flex;
+        gap: 25px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px 0;
+        white-space: nowrap;
+        position: relative;
+    }
+    
+    .cash-in-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    #card-1.active, #card-2.active, #card-3.active, #card-4.active, #card-5.active {
+        transform: scale(1.1);
+        background: #F98E58;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        transition: transform 0.3s ease-in-out;
+        min-width: 180px;
+        height: 230px;
+    }
+    
+    #wallet-money{
+        margin-bottom: 50px;
+    }
+    .gambers-profile-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile-container hr{
+        margin: 7% 0 7% 0;
+    }
+
+    .profile-container{
+        order: -1;
+        border: none;
+        width:100%;
+        padding: 15px 35px 10px 35px;
+    }
+
+    .history-container{
+        order: 1;
+        width: 100%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-right: none;
+    }
+
+    .bets-container{
+        width: 100%;
+    }
+
+    .luck-container{
+        width: 100%;
+    }
+
+    .jackpots-container{
+        width: 100%;
+    }
+
+    .gambler-achievements-container{
+        height: auto;
+    }
+
+    .gambler-achievements-container hr{
+        width: 80%;
+        background-color: #1C1611;
+    }
+
+    .wallet-outer-container{
+        order: 2;
+        width: 100%;
+    }
+
+    #gambler-name{
+        font-size: 2rem;
+    }
+
+    #gambler-joined-date{
+        margin: 0;
+    }
+
+    .gambler-name-container{
+        height: 70px;
+    }
+
+    .profile-image{
+        width: 100px;
+        height: 70px;
+    }
+}

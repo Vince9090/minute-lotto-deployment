@@ -1,0 +1,324 @@
+
+/* TODO: Heres for the profile bar container */
+.gamblers-hub-container {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.online-gamblers {
+    width: 190px;
+    height: 30px;
+    background-color: #FFEFD7;
+    border: 1.5px solid #1C1611;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.hambler-container {
+    width: 57px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.icon-container {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.num-online-container {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.icon-container img {
+    width: 20px;
+}
+
+.hambler-container span {
+    font-size: 0.8rem;
+    font-family: var(--font-regular)
+}
+
+.num-online-container span {
+    font-size: 0.8rem;
+    font-family: var(--font-regular);
+}
+
+.circle-lmao {
+    border-radius: 50%;
+    background-color: #6FD955;
+    width: 13px;
+    height: 13px;
+}
+
+.account-container {
+    width: 390px;
+    height: 100%;
+    background-color: #6FD955;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.profile-picture-container {
+    height: 100%;
+    width: 80px;
+    background-color: #FFEFD7;
+    border-left: 1.5px solid #1C1611;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.profile-picture-container img {
+    width: 4.3rem;
+}
+
+.profile-name-container {
+    height: 100%;
+    width: 220px;
+    background-color: #FFEFD7;
+    border-left: 1.5px solid #1C1611;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box
+}
+
+#profile-gambler-username,
+#profile-gambler-title {
+    margin-left: 1rem;
+}
+
+#profile-gambler-username {
+    font-family: var(--font-medium);
+    font-size: 1.1rem;
+}
+
+#profile-gambler-title {
+    font-family: var(--font-regular);
+    font-size: 0.8rem;
+}
+
+.profile-notification-container {
+    height: 100%;
+    width: 90px;
+    background-color: #FFEFD7;
+    border-left: 1.5px solid #1C1611;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.profile-notification-container img {
+    width: 1.3rem;
+}
+
+/* * Navigation styles */
+
+/* TODO: Heres for the necessity container */
+
+.necessity-container {
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+#crown-logo {
+    width: 28px;
+}
+
+#home-page-button,
+#profile-page-button {
+    width: 57px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#home-page-button {
+    gap: 5px;
+}
+
+#profile-page-button {
+    gap: 5px;
+}
+
+#home-page-button img {
+    width: 25px;
+}
+
+#home-page-button span {
+    font-family: var(--font-medium);
+    font-size: 0.8rem;
+}
+
+#profile-page-button img {
+    width: 25px;
+}
+
+#profile-page-button span {
+    font-family: var(--font-medium);
+    font-size: 0.7rem;
+}
+
+/* TODO: Heres for the support container */
+
+.support-container {
+    width: 100%;
+    height: 195px;
+    margin-top: 208px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#logout-button {
+    width: 57px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#logout-button {
+    gap: 7px;
+}
+
+#logout-button img {
+    width: 21px;
+}
+
+#logout-button span {
+    font-family: var(--font-medium);
+    font-size: 0.7rem;
+}
+
+.pfp-logo{
+    display: none;
+}
+
+
+
+/*laptop small*/
+@media screen and (max-width: 1280px) {
+    .support-container{
+        margin-top: 0;
+        height: 55%;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 930px){
+    .account-container{
+        width: 250px;
+    }
+}
+
+/* MObile*/
+@media screen and (max-width: 660px){
+    .gamblers-hub-container{
+        display: none;
+    }
+
+    .account-container{
+        width: 100%;
+    }
+
+    .profile-name-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-gambler-username, #profile-gambler-title{
+        display: none;
+    }
+
+    .profile-picture-container img{
+        display: none;
+    }
+
+    .pfp-logo{
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .bottom-container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .bottom-container a.active {
+        background-color: #ffee00;
+        color: white;
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+        box-shadow: 9px 0px 0px rgba(0, 0, 0, 0.2);
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+
+
+    .bottom-container a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-right: 2px solid #1C1611;
+        text-decoration: none;
+
+    }
+
+    #logout-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #logout-button span {
+        font-family: var(--font-medium);
+        font-size: 1rem;
+    }
+    #home-page-button span{
+        font-family: var(--font-medium);
+        font-size: 1rem;
+    }
+    #profile-page-button span {
+        font-family: var(--font-medium);
+        font-size: 1rem;
+    }
+}

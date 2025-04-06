@@ -1,0 +1,103 @@
+version: '3.6'
+
+services:
+  mysql_master:
+    image: mariadb:10.3
+    env_file:
+      - ./backend/master/mysql_master.env
+    container_name: mysql_master
+    restart: "no"
+    ports:
+      - 4406:3306
+    volumes:
+      - ./backend/master/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
+      - ./backend/master/data:/var/lib/mysql
+      - ./backend/db:/db
+    networks:
+      - appnet
+      
+
+  mysql_slave:
+    image: mariadb:10.3
+    env_file:
+      - ./backend/slave/mysql_slave.env
+    container_name: mysql_slave
+    restart: "no"
+    ports:
+      - 5506:3306
+    depends_on:
+      - mysql_master
+    volumes:
+      - ./backend/slave/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
+      - ./backend/slave/data:/var/lib/mysql
+      - ./backend/db:/db
+    networks:
+      - appnet
+   
+
+  mini-lotto-api:
+    build: ./backend/mini-lotto-api
+    container_name: mini-lotto-api
+    environment:
+      - API_KEY=nigga
+      - API_SECRET_KEY=niggers
+      - DB_HOST_MASTER=mysql_master
+      - DB_HOST_SLAVE=mysql_slave
+      - DB_MASTER_USER=mydb_user
+      - DB_SLAVE_USER=mydb_slave_user
+      - DB_MASTER_PASSWORD=mydb_pwd
+      - DB_SLAVE_PASSWORD=mydb_slave_pwd
+      - DB_NAME=mini_lotto
+    restart: "always"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql_master
+      - mysql_slave
+    networks:
+      - appnet
+
+  app1:
+    build: ./frontend/app/
+    container_name: app1
+    ports:
+      - 3000:3000
+    environment:
+      - APPNAME=app1
+    networks:
+      - appnet
+
+  app2:
+    build: ./frontend/app/
+    container_name: app2
+    ports:
+      - 3001:3000
+    environment:
+      - APPNAME=app2
+    networks:
+      - appnet
+      
+  app3:
+    build: ./frontend/app/
+    container_name: app3
+    ports:
+      - 3002:3000
+    environment:
+      - APPNAME=app3
+    networks:
+      - appnet
+  
+  loadbalancer:
+    build: ./frontend/haproxy
+    container_name: loadbalancer
+    ports:
+      - 80:80
+    depends_on:
+      - app1
+      - app2
+      - app3
+    networks:
+      - appnet
+
+networks:
+  appnet:
