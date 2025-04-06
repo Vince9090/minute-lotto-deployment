@@ -1,0 +1,1 @@
+# minute-lotto-deployment
